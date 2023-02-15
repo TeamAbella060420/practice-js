@@ -1,4 +1,15 @@
-let myVAr = 81;
-myVAr++;
+// let myVAr = 81;
+// myVAr++;
 
-console.log(myVAr);
+// console.log(myVAr);
+
+let a = 10;
+function outer () {
+    let b = 20;
+    function inner () {
+        let c = 30;
+        console.log(a, b, c);
+    }
+    inner()
+}
+outer()
